@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Top navbar -->
+    <section class="top-nav py-5 px-5 flex justify-between items-center">
+      <div class="top-nav__logo">
+        <h1 class="text-3xl uppercase text-center">
+          <span class="flex items-center gap-3 font-bold">
+            <img
+              class="h-8 w-8"
+              src="/assets/images/icons/favicon.svg"
+              alt=""
+            />
+            EHR
+          </span>
+        </h1>
+      </div>
+      <div class="top-nav__user">
+        <span
+          class="flex items-center gap-2 font-semibold hover:cursor-pointer"
+        >
+          <i class="bx bxs-user text-xl"></i>
+          John Smith
+          <i class="bx bxs-chevron-down text-xl"></i>
+        </span>
+      </div>
+    </section>
+
+    <section class="flex min-h-screen">
+      <!-- Sidebar -->
+      <aside class="overflow-hidden h-full">
+        <nav class="nav min-h-screen max-w-full w-48 px-5">
+          <div class="nav__items">
+            <ul class="flex flex-col gap-3 justify-center pt-5 text-center">
+              <li class="mr-auto">
+                <a
+                  href="index.html"
+                  class="flex items-center gap-3 p-2 font-bold hover:cursor-pointer hover:bg-blue duration-300 hover:rounded-md"
+                >
+                  <i class="bx bx-home text-2xl"></i>
+                  Home
+                </a>
+              </li>
+              <li class="mr-auto">
+                <a
+                  href="patients.html"
+                  class="flex items-center gap-3 p-2 font-bold hover:cursor-pointer hover:bg-blue duration-300 hover:rounded-md"
+                >
+                  <i class="bx bx-user text-2xl"></i>
+                  Patients
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+      <section class="min-h-screen grow bg-background p-5">patients</section>
+    </section>
+  </body>
+</html>
