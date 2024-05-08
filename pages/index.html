@@ -53,8 +53,8 @@
             <ul class="flex flex-col gap-3 justify-center pt-5 text-center">
               <li class="mr-auto">
                 <a
-                  href="index.html"
-                  class="flex items-center gap-3 p-2 font-bold hover:cursor-pointer hover:bg-blue duration-300 hover:rounded-md"
+                  href="#"
+                  class="flex items-center gap-3 p-2 font-bold hover:cursor-pointer hover:bg-light-blue duration-300 hover:rounded-md"
                 >
                   <i class="bx bx-home text-2xl"></i>
                   Home
@@ -63,7 +63,7 @@
               <li class="mr-auto">
                 <a
                   href="patients.html"
-                  class="flex items-center gap-3 p-2 font-bold hover:cursor-pointer hover:bg-blue duration-300 hover:rounded-md"
+                  class="flex items-center gap-3 p-2 font-bold hover:cursor-pointer hover:bg-light-blue duration-300 hover:rounded-md"
                 >
                   <i class="bx bx-user text-2xl"></i>
                   Patients
@@ -74,78 +74,562 @@
         </nav>
       </aside>
       <main class="min-h-screen grow bg-background p-5">
-        <!-- Patients -->
         <div class="grid grid-cols-4 gap-4">
+          <!-- Patients -->
           <div class="rounded-md p-5 flex flex-col gap-2 bg-white">
             <h2 class="font-bold text-2xl mb-5">
               <span class="flex items-center gap-2">
                 <img
                   class="w-8 h-8"
                   src="/assets/images/icons/patient-64.png"
-                  alt=""
+                  alt="Patient's icon"
                 />
                 Patients
               </span>
             </h2>
             <h5 class="font-bold text-xl">105k</h5>
-            <p class="text-sm">
+            <p class="text-base">
               <span class="text-dark font-bold">100 </span>
               Patients joined this week
             </p>
           </div>
+          <!-- Doctors -->
           <div class="rounded-md p-5 flex flex-col gap-2 bg-white">
             <h2 class="font-bold text-2xl mb-5">
               <span class="flex items-center gap-2">
                 <img
                   class="w-8 h-8"
-                  src="/assets/images/icons/patient-64.png"
-                  alt=""
+                  src="/assets/images/icons/doctor-64.png"
+                  alt="Doctor's icon"
                 />
-                Patients
+                Doctors
               </span>
             </h2>
-            <h5 class="font-bold text-xl">105k</h5>
-            <p class="text-sm">
-              <span class="text-dark font-bold">100 </span>
-              Patients joined this week
+            <h5 class="font-bold text-xl">50+</h5>
+            <p class="text-base">
+              <span class="text-dark font-bold">3</span>
+              Doctors joined this week
             </p>
           </div>
+          <!-- Staff -->
           <div class="rounded-md p-5 flex flex-col gap-2 bg-white">
             <h2 class="font-bold text-2xl mb-5">
               <span class="flex items-center gap-2">
                 <img
                   class="w-8 h-8"
-                  src="/assets/images/icons/patient-64.png"
-                  alt=""
+                  src="/assets/images/icons/employees-64.png"
+                  alt="Employee's icon"
                 />
-                Patients
+                Staff
               </span>
             </h2>
-            <h5 class="font-bold text-xl">105k</h5>
-            <p class="text-sm">
-              <span class="text-dark font-bold">100 </span>
-              Patients joined this week
+            <h5 class="font-bold text-xl">150+</h5>
+            <p class="text-base">
+              <span class="text-dark font-bold">10</span>
+              Staffs on joined
             </p>
           </div>
+          <!-- Pharmacy -->
           <div class="rounded-md p-5 flex flex-col gap-2 bg-white">
             <h2 class="font-bold text-2xl mb-5">
               <span class="flex items-center gap-2">
                 <img
                   class="w-8 h-8"
-                  src="/assets/images/icons/patient-64.png"
-                  alt=""
+                  src="/assets/images/icons/pharmacy-64.png"
+                  alt="Pharmacy's icon"
                 />
-                Patients
+                Pharmacy
               </span>
             </h2>
-            <h5 class="font-bold text-xl">105k</h5>
-            <p class="text-sm">
-              <span class="text-dark font-bold">100 </span>
-              Patients joined this week
+            <h5 class="font-bold text-xl">4+</h5>
+            <p class="text-base">
+              <span class="text-dark font-bold">55k</span>
+              Medicine on reserve
             </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-10 gap-5 my-8">
+          <div class="overflow-x-auto rounded-md col-span-6">
+            <table class="w-full text-left rtl:text-right">
+              <thead class="text-sm bg-white border-b text-dark">
+                <tr>
+                  <th scope="col" class="px-6 py-3">Patient name</th>
+                  <th scope="col" class="px-6 py-3">Gender</th>
+                  <th scope="col" class="px-6 py-3">Age</th>
+                  <th scope="col" class="px-6 py-3">Date & Time</th>
+                  <th scope="col" class="px-6 py-3">Diseases</th>
+                  <th scope="col" class="px-6 py-3">Appoint for</th>
+                  <th scope="col" class="px-6 py-3">Setting</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white border-b">
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    John Smith
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    Male
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    40
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    30 May 6:00pm
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    Fever
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    Dr. Alex Karev
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap flex items-center gap-2"
+                  >
+                    <a href="">
+                      <i class="bx bxs-pencil text-lg text-blue-900"></i
+                    ></a>
+                    <a href="">
+                      <i class="bx bxs-trash text-lg text-red-500"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr class="bg-white border-b">
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    John Smith
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    Male
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    40
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    30 May 6:00pm
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    Fever
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    Dr. Alex Karev
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap flex items-center gap-2"
+                  >
+                    <a href="">
+                      <i class="bx bxs-pencil text-lg text-blue-900"></i
+                    ></a>
+                    <a href="">
+                      <i class="bx bxs-trash text-lg text-red-500"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr class="bg-white border-b">
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    John Smith
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    Male
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    40
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    30 May 6:00pm
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    Fever
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    Dr. Alex Karev
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap flex items-center gap-2"
+                  >
+                    <a href="">
+                      <i class="bx bxs-pencil text-lg text-blue-900"></i
+                    ></a>
+                    <a href="">
+                      <i class="bx bxs-trash text-lg text-red-500"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr class="bg-white border-b">
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    John Smith
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    Male
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    40
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    30 May 6:00pm
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    Fever
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    Dr. Alex Karev
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap flex items-center gap-2"
+                  >
+                    <a href="">
+                      <i class="bx bxs-pencil text-lg text-blue-900"></i
+                    ></a>
+                    <a href="">
+                      <i class="bx bxs-trash text-lg text-red-500"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr class="bg-white border-b">
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    John Smith
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    Male
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    40
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    30 May 6:00pm
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    Fever
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    Dr. Alex Karev
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap flex items-center gap-2"
+                  >
+                    <a href="">
+                      <i class="bx bxs-pencil text-lg text-blue-900"></i
+                    ></a>
+                    <a href="">
+                      <i class="bx bxs-trash text-lg text-red-500"></i
+                    ></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            class="bg-white rounded-md p-8 overflow-y-auto space-y-5 h-5/6 col-span-4"
+          >
+            <h3 class="font-bold text-dark mb-10">Upcoming consultations</h3>
+            <div class="patient flex justify-between items-center">
+              <div class="flex items-center gap-3">
+                <img
+                  src="/assets/images/patients/patient-1.png"
+                  alt="John Smith"
+                  class="patient__img"
+                />
+                <div class="flex flex-col">
+                  <p class="patient__name text-dark font-semibold">
+                    John Smith
+                  </p>
+                  <p class="patient__appointment">30 May, 2024 | 06:00 PM</p>
+                </div>
+              </div>
+              <a
+                href=""
+                class="block text-center p-3 rounded-md bg-blue-600 hover:bg-blue-500 duration-300 text-white"
+                >Clinical record</a
+              >
+            </div>
+            <div class="patient flex justify-between items-center">
+              <div class="flex items-center gap-3">
+                <img
+                  src="/assets/images/patients/patient-1.png"
+                  alt="John Smith"
+                  class="patient__img"
+                />
+                <div class="flex flex-col">
+                  <p class="patient__name text-dark font-semibold">
+                    John Smith
+                  </p>
+                  <p class="patient__appointment">30 May, 2024 | 06:00 PM</p>
+                </div>
+              </div>
+              <a
+                href=""
+                class="block text-center p-3 rounded-md bg-blue-600 hover:bg-blue-500 duration-300 text-white"
+                >Clinical record</a
+              >
+            </div>
+            <div class="patient flex justify-between items-center">
+              <div class="flex items-center gap-3">
+                <img
+                  src="/assets/images/patients/patient-1.png"
+                  alt="John Smith"
+                  class="patient__img"
+                />
+                <div class="flex flex-col">
+                  <p class="patient__name text-dark font-semibold">
+                    John Smith
+                  </p>
+                  <p class="patient__appointment">30 May, 2024 | 06:00 PM</p>
+                </div>
+              </div>
+              <a
+                href=""
+                class="block text-center p-3 rounded-md bg-blue-600 hover:bg-blue-500 duration-300 text-white"
+                >Clinical record</a
+              >
+            </div>
+            <div class="patient flex justify-between items-center">
+              <div class="flex items-center gap-3">
+                <img
+                  src="/assets/images/patients/patient-1.png"
+                  alt="John Smith"
+                  class="patient__img"
+                />
+                <div class="flex flex-col">
+                  <p class="patient__name text-dark font-semibold">
+                    John Smith
+                  </p>
+                  <p class="patient__appointment">30 May, 2024 | 06:00 PM</p>
+                </div>
+              </div>
+              <a
+                href=""
+                class="block text-center p-3 rounded-md bg-blue-600 hover:bg-blue-500 duration-300 text-white"
+                >Clinical record</a
+              >
+            </div>
+            <div class="patient flex justify-between items-center">
+              <div class="flex items-center gap-3">
+                <img
+                  src="/assets/images/patients/patient-1.png"
+                  alt="John Smith"
+                  class="patient__img"
+                />
+                <div class="flex flex-col">
+                  <p class="patient__name text-dark font-semibold">
+                    John Smith
+                  </p>
+                  <p class="patient__appointment">30 May, 2024 | 06:00 PM</p>
+                </div>
+              </div>
+              <a
+                href=""
+                class="block text-center p-3 rounded-md bg-blue-600 hover:bg-blue-500 duration-300 text-white"
+                >Clinical record</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-9 gap-4">
+          <div class="patient-details rounded-md bg-white p-5 col-span-3">
+            <h2 class="text-dark font-bold text-xl mb-10">
+              Next patient's details
+            </h2>
+            <div
+              class="patient-details__info flex flex-col justify-center items-center gap-2"
+            >
+              <img
+                src="/assets/images/patients/patient-1.png"
+                alt=""
+                class="patient__details-img h-16 w-16"
+              />
+              <h3 class="patient-details__name font-bold text-lg">
+                John Smith
+              </h3>
+              <p class="text-sm">
+                25 years old |<span
+                  class="patient-detailt__location font-semibold"
+                >
+                  <i class="bx bx-location-plus"></i>
+                  Manila, Philippines
+                </span>
+              </p>
+            </div>
+            <div class="patient-details__vitals flex justify-evenly my-5">
+              <div
+                class="flex flex-col justify-center items-center gap-3 p-3 mx-auto"
+              >
+                <p class="text-sm">Blood</p>
+                <span class="font-bold uppercase">O+</span>
+              </div>
+              <div
+                class="flex flex-col justify-center items-center gap-3 p-3 mx-auto"
+              >
+                <p class="text-sm">Height</p>
+                <span class="font-bold">176cm</span>
+              </div>
+              <div
+                class="flex flex-col justify-center items-center gap-3 p-3 mx-auto"
+              >
+                <p class="text-sm">Weight</p>
+                <span class="font-bold">86kg</span>
+              </div>
+            </div>
+            <div class="patient-details__tabs flex items-center gap-10">
+              <p
+                id="summaryTab"
+                onclick="handleSummary()"
+                class="patient-details__tab text-sm font-bold cursor-pointer hover:border-b hover:border-b-blue-600 duration-300"
+              >
+                Summary
+              </p>
+              <p
+                id="conditionTab"
+                onclick="handleConditions()"
+                class="patient-details__tab text-sm font-bold cursor-pointer hover:border-b hover:border-b-blue-600 duration-300"
+              >
+                Condition
+              </p>
+              <p
+                id="notesTab"
+                onclick="handleNotes()"
+                class="patient-details__tab text-sm font-bold cursor-pointer hover:border-b hover:border-b-blue-600 duration-300"
+              >
+                Notes
+              </p>
+            </div>
+            <div class="patient-details__description">
+              <div class="patient-details__summary hidden my-3">
+                <p class="text-sm">
+                  John is a 32-year-old male with no known allergies or drug
+                  sensitivities. He has a history of seasonal allergies and
+                  occasional migraines. He takes no medications regularly.
+                </p>
+              </div>
+              <div class="patient-details__condition my-3">
+                <p class="text-sm">
+                  John is a 32-year-old male with no known allergies or drug
+                  sensitivities. He has a history of seasonal allergies and
+                  occasional migraines. He takes no medications regularly.
+                </p>
+              </div>
+              <div class="patient-details__Notes"></div>
+            </div>
+          </div>
+          <div class="overflow-x-auto rounded-md col-span-6">
+            <table class="w-full text-left rtl:text-right">
+              <thead class="text-sm bg-white border-b text-dark">
+                <tr>
+                  <th scope="col" class="px-6 py-3">Patient name</th>
+                  <th scope="col" class="px-6 py-3">Gender</th>
+                  <th scope="col" class="px-6 py-3">Age</th>
+                  <th scope="col" class="px-6 py-3">Date & Time</th>
+                  <th scope="col" class="px-6 py-3">Diseases</th>
+                  <th scope="col" class="px-6 py-3">Appoint for</th>
+                  <th scope="col" class="px-6 py-3">Setting</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white border-b">
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    John Smith
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    Male
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    40
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    30 May 6:00pm
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    Fever
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    Dr. Alex Karev
+                  </td>
+                  <td
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap flex items-center gap-2"
+                  >
+                    <a href="">
+                      <i class="bx bxs-pencil text-lg text-blue-900"></i
+                    ></a>
+                    <a href="">
+                      <i class="bx bxs-trash text-lg text-red-500"></i
+                    ></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </main>
     </section>
+    <script src="/scripts/tabs.js"></script>
   </body>
 </html>
