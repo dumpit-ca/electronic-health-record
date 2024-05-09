@@ -99,7 +99,7 @@
         <div class="p-4">
           <div class="new-patient">
             <a
-              href="../../pages/patients/patients.html"
+              href="../../pages/patients.html"
               class="text-dark font-bold flex items-center gap-2 cursor-pointer"
             >
               <i class="bx bxs-chevron-left text-3xl"></i>
@@ -230,6 +230,22 @@
                 ></textarea>
               </div>
 
+              <div class="grid grid-cols-2 gap-4">
+                <div class="flex flex-col gap-2">
+                  <label for="" class="text-grey-700 font-bold"
+                    >Consultation Date</label
+                  >
+                  <input type="date" class="rounded-md" />
+                </div>
+
+                <div class="flex flex-col gap-2">
+                  <label for="" class="text-grey-700 font-bold"
+                    >Consultation Time</label
+                  >
+                  <input type="time" class="rounded-md" />
+                </div>
+              </div>
+
               <div class="flex flex-col gap-2">
                 <label for="" class="text-grey-700 font-bold">Diagnosis</label>
                 <input
@@ -237,8 +253,13 @@
                   type="text"
                   class="rounded-md bg-background"
                   placeholder="Diagnosis"
-                ></input>
-                <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">Add diagnonis after consultation, and laboratory results.</p>
+                />
+                <p
+                  id="helper-text-explanation"
+                  class="mt-2 text-sm text-gray-500 dark:text-gray-400"
+                >
+                  Add diagnonis after consultation, and laboratory results.
+                </p>
               </div>
 
               <button
