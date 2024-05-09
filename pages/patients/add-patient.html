@@ -59,7 +59,7 @@
           <ul class="space-y-2 font-medium">
             <li>
               <a
-                href="../index.html"
+                href="../../index.html"
                 class="flex items-center gap-3 p-2 font-bold hover:cursor-pointer hover:bg-light-blue duration-300 hover:rounded-md"
               >
                 <i class="bx bx-home text-2xl"></i>
@@ -90,21 +90,169 @@
       <!-- content -->
       <div class="p-4 sm:ml-64">
         <div class="top-nav py-5 w-96 ml-auto">
-          <span
-            class="flex items-center gap-2 font-semibold hover:cursor-pointer justify-end"
-          >
+          <span class="flex items-center gap-2 font-semibold justify-end">
             <i class="bx bxs-user text-xl"></i>
             John Smith
-            <i class="bx bxs-chevron-down text-xl"></i>
+            <i class="bx bxs-chevron-down text-xl hover:cursor-pointer"></i>
           </span>
         </div>
-        <div class="bg-background p-4">
+        <div class="p-4">
           <div class="new-patient">
-            <h1 class="text-dark font-bold text-xl">Add a new patient</h1>
+            <a
+              href="../../pages/patients/patients.html"
+              class="text-dark font-bold flex items-center gap-2 cursor-pointer"
+            >
+              <i class="bx bxs-chevron-left text-3xl"></i>
+              <span class="text-3xl"> Add a new patient </span>
+            </a>
+            <form id="addPatient" class="my-10 space-y-8">
+              <div class="grid md:grid-cols-3 gap-5">
+                <div class="flex flex-col gap-2">
+                  <label for="firstName" class="text-grey-700 font-bold"
+                    >First Name</label
+                  >
+                  <input
+                    name="firstName"
+                    id="firstName"
+                    placeholder="First Name"
+                    type="text"
+                    class="bg-background rounded-md"
+                  />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="" class="text-grey-700 font-bold"
+                    >Middle Name</label
+                  >
+                  <input
+                    placeholder="Middle Name"
+                    type="text"
+                    class="bg-background rounded-md"
+                  />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="" class="text-grey-700 font-bold"
+                    >Last Name</label
+                  >
+                  <input
+                    placeholder="Last Name"
+                    type="text"
+                    class="bg-background rounded-md"
+                  />
+                </div>
+              </div>
+
+              <div class="grid md:grid-cols-3 gap-5">
+                <div class="flex flex-col gap-2">
+                  <label for="" class="text-grey-700 font-bold">Birthday</label>
+                  <input type="date" class="bg-background rounded-md" />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="" class="text-grey-700 font-bold">Age</label>
+                  <input type="number" class="bg-background rounded-md" />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="" class="text-grey-700 font-bold">Sex</label>
+                  <select class="rounded-md">
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-2">
+                <label for="" class="text-grey-700 font-bold">Address</label>
+                <input type="text" class="bg-background rounded-md" />
+              </div>
+
+              <div class="grid md:grid-cols-3 gap-5">
+                <div class="flex flex-col gap-2">
+                  <label for="" class="text-grey-700 font-bold"
+                    >Civil Status</label
+                  >
+                  <select class="rounded-md">
+                    <option value="Female">Single</option>
+                    <option value="Male">Married</option>
+                    <option value="Male">Widowed</option>
+                  </select>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="" class="text-grey-700 font-bold">Religion</label>
+                  <input type="text" class="bg-background rounded-md" />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="" class="text-grey-700 font-bold"
+                    >Nationality</label
+                  >
+                  <input type="text" class="bg-background rounded-md" />
+                </div>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-5">
+                <div class="flex flex-col gap-2">
+                  <label for="" class="text-grey-700 font-bold">Weight</label>
+                  <div class="flex">
+                    <input
+                      type="number"
+                      class="rounded-none rounded-s-lg bg-gray-50 border-gray-200 text-gray-900 block flex-1 min-w-0 w-full text-sm p-2.5"
+                      placeholder="Weight"
+                    />
+                    <span
+                      class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-e-md rounded-r-lg"
+                    >
+                      kg
+                    </span>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="" class="text-grey-700 font-bold">Height</label>
+                  <div class="flex">
+                    <input
+                      type="number"
+                      class="rounded-none rounded-s-lg bg-gray-50 border-gray-200 text-gray-900 block flex-1 min-w-0 w-full text-sm p-2.5"
+                      placeholder="Height"
+                    />
+                    <span
+                      class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-e-md rounded-r-lg"
+                    >
+                      cm
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-2">
+                <label for="" class="text-grey-700 font-bold">Complaint</label>
+                <textarea
+                  name="complaint"
+                  id=""
+                  class="rounded-md bg-background border-gray-100 patient-complaint"
+                  placeholder="Complaint"
+                ></textarea>
+              </div>
+
+              <div class="flex flex-col gap-2">
+                <label for="" class="text-grey-700 font-bold">Diagnosis</label>
+                <input
+                  name="diagnosis"
+                  type="text"
+                  class="rounded-md bg-background"
+                  placeholder="Diagnosis"
+                ></input>
+                <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">Add diagnonis after consultation, and laboratory results.</p>
+              </div>
+
+              <button
+                type="submit"
+                class="px-3 py-2 text-white bg-blue-900 rounded-md hover:bg-blue-800 duration-300"
+              >
+                Add Patient
+              </button>
+            </form>
           </div>
         </div>
       </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="../../scripts/add-patient.js"></script>
   </body>
 </html>
