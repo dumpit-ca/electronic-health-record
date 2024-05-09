@@ -99,7 +99,7 @@
         <div class="p-4">
           <div class="new-patient">
             <a
-              href="../../pages/patients.html"
+              href="./patients.html"
               class="text-dark font-bold flex items-center gap-2 cursor-pointer"
             >
               <i class="bx bxs-chevron-left text-3xl"></i>
@@ -124,6 +124,8 @@
                     >Middle Name</label
                   >
                   <input
+                    name="middleName"
+                    id="middleName"
                     placeholder="Middle Name"
                     type="text"
                     class="bg-background rounded-md"
@@ -134,6 +136,8 @@
                     >Last Name</label
                   >
                   <input
+                    name="lastName"
+                    id="lastName"
                     placeholder="Last Name"
                     type="text"
                     class="bg-background rounded-md"
@@ -144,15 +148,25 @@
               <div class="grid md:grid-cols-3 gap-5">
                 <div class="flex flex-col gap-2">
                   <label for="" class="text-grey-700 font-bold">Birthday</label>
-                  <input type="date" class="bg-background rounded-md" />
+                  <input
+                    name="birthday"
+                    id="birthday"
+                    type="date"
+                    class="bg-background rounded-md"
+                  />
                 </div>
                 <div class="flex flex-col gap-2">
                   <label for="" class="text-grey-700 font-bold">Age</label>
-                  <input type="number" class="bg-background rounded-md" />
+                  <input
+                    name="age"
+                    id="age"
+                    type="number"
+                    class="bg-background rounded-md"
+                  />
                 </div>
                 <div class="flex flex-col gap-2">
                   <label for="" class="text-grey-700 font-bold">Sex</label>
-                  <select class="rounded-md">
+                  <select name="sex" id="sex" class="rounded-md">
                     <option value="Female">Female</option>
                     <option value="Male">Male</option>
                   </select>
@@ -161,7 +175,12 @@
 
               <div class="flex flex-col gap-2">
                 <label for="" class="text-grey-700 font-bold">Address</label>
-                <input type="text" class="bg-background rounded-md" />
+                <input
+                  name="address"
+                  id="address"
+                  type="text"
+                  class="bg-background rounded-md"
+                />
               </div>
 
               <div class="grid md:grid-cols-3 gap-5">
@@ -169,21 +188,35 @@
                   <label for="" class="text-grey-700 font-bold"
                     >Civil Status</label
                   >
-                  <select class="rounded-md">
-                    <option value="Female">Single</option>
-                    <option value="Male">Married</option>
-                    <option value="Male">Widowed</option>
+                  <select
+                    name="civilStatus"
+                    id="civilStatus"
+                    class="rounded-md"
+                  >
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                    <option value="Widowed">Widowed</option>
                   </select>
                 </div>
                 <div class="flex flex-col gap-2">
                   <label for="" class="text-grey-700 font-bold">Religion</label>
-                  <input type="text" class="bg-background rounded-md" />
+                  <input
+                    name="religion"
+                    id="religion"
+                    type="text"
+                    class="bg-background rounded-md"
+                  />
                 </div>
                 <div class="flex flex-col gap-2">
                   <label for="" class="text-grey-700 font-bold"
                     >Nationality</label
                   >
-                  <input type="text" class="bg-background rounded-md" />
+                  <input
+                    name="nationality"
+                    id="nationality"
+                    type="text"
+                    class="bg-background rounded-md"
+                  />
                 </div>
               </div>
 
@@ -192,6 +225,8 @@
                   <label for="" class="text-grey-700 font-bold">Weight</label>
                   <div class="flex">
                     <input
+                      name="weight"
+                      id="weight"
                       type="number"
                       class="rounded-none rounded-s-lg bg-gray-50 border-gray-200 text-gray-900 block flex-1 min-w-0 w-full text-sm p-2.5"
                       placeholder="Weight"
@@ -207,6 +242,8 @@
                   <label for="" class="text-grey-700 font-bold">Height</label>
                   <div class="flex">
                     <input
+                      name="height"
+                      id="height"
                       type="number"
                       class="rounded-none rounded-s-lg bg-gray-50 border-gray-200 text-gray-900 block flex-1 min-w-0 w-full text-sm p-2.5"
                       placeholder="Height"
@@ -224,32 +261,41 @@
                 <label for="" class="text-grey-700 font-bold">Complaint</label>
                 <textarea
                   name="complaint"
-                  id=""
+                  id="complaint"
                   class="rounded-md bg-background border-gray-100 patient-complaint"
                   placeholder="Complaint"
                 ></textarea>
               </div>
 
-              <div class="grid grid-cols-2 gap-4">
-                <div class="flex flex-col gap-2">
-                  <label for="" class="text-grey-700 font-bold"
-                    >Consultation Date</label
-                  >
-                  <input type="date" class="rounded-md" />
-                </div>
+              <div class="flex flex-col gap-2">
+                <label for="" class="text-grey-700 font-bold">Doctor</label>
+                <select name="doctor" id="doctor" class="rounded-md">
+                  <option value="Dr. Meredith Grey">Dr. Meredith Grey</option>
+                  <option value="Dr. Amelia Sheperd">Dr. Amelia Sheperd</option>
+                  <option value="Dr. Alex Karev">Dr. Alex Karev</option>
+                  <option value="Dr. Celia Grace">Dr. Celia Grace</option>
+                  <option value="Dr. Ellis Grey">Dr. Ellis Grey</option>
+                  <option value="Dr. Diana Prince">Dr. Diana Prince</option>
+                </select>
+              </div>
 
-                <div class="flex flex-col gap-2">
-                  <label for="" class="text-grey-700 font-bold"
-                    >Consultation Time</label
-                  >
-                  <input type="time" class="rounded-md" />
-                </div>
+              <div class="flex flex-col gap-2">
+                <label for="" class="text-grey-700 font-bold"
+                  >Consultation Date</label
+                >
+                <input
+                  name="scheduleDate"
+                  id="scheduleDate"
+                  type="date"
+                  class="rounded-md"
+                />
               </div>
 
               <div class="flex flex-col gap-2">
                 <label for="" class="text-grey-700 font-bold">Diagnosis</label>
                 <input
                   name="diagnosis"
+                  id="diagnosis"
                   type="text"
                   class="rounded-md bg-background"
                   placeholder="Diagnosis"

@@ -160,7 +160,7 @@
           <!-- patients list -->
           <div class="flex justify-end w-full my-5">
             <a
-              href="./patients/add-patient.html"
+              href="./add-patient.html"
               class="border-2 border-blue-900 rounded-md text-dark text-center py-2 px-3 hover:bg-blue-950 hover:text-white duration-300"
             >
               <span class="flex items-center gap-3">
@@ -174,45 +174,84 @@
               <thead class="text-sm bg-white border-b text-dark">
                 <tr>
                   <th scope="col" class="px-6 py-3">Patient name</th>
-                  <th scope="col" class="px-6 py-3">Gender</th>
+                  <th scope="col" class="px-6 py-3">Sex</th>
+                  <th scope="col" class="px-6 py-3">Birthday</th>
                   <th scope="col" class="px-6 py-3">Age</th>
-                  <th scope="col" class="px-6 py-3">Date & Time</th>
+                  <th scope="col" class="px-6 py-3">Address</th>
+                  <th scope="col" class="px-6 py-3">Civil Status</th>
+                  <th scope="col" class="px-6 py-3">Religion</th>
+                  <th scope="col" class="px-6 py-3">Nationality</th>
+                  <th scope="col" class="px-6 py-3">Weight</th>
+                  <th scope="col" class="px-6 py-3">Height</th>
+                  <th scope="col" class="px-6 py-3">
+                    Consultation Date & Time
+                  </th>
                   <th scope="col" class="px-6 py-3">Diagnosis</th>
                   <th scope="col" class="px-6 py-3">Appoint for</th>
                   <th scope="col" class="px-6 py-3">Setting</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id="dataBody">
                 <tr class="bg-white border-b">
                   <td
                     id="patientName"
                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
                   ></td>
+
                   <td
+                    id="sex"
                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-                  >
-                    Female
-                  </td>
+                  ></td>
+
                   <td
+                    id="birthday"
                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-                  >
-                    32
-                  </td>
+                  ></td>
+
                   <td
+                    id="age"
                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-                  >
-                    30 May 6:00pm
-                  </td>
+                  ></td>
+
                   <td
+                    id="address"
                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-                  >
-                    Fever
-                  </td>
+                  ></td>
+
                   <td
+                    id="civilStatus"
                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-                  >
-                    Dr. Alex Karev
-                  </td>
+                  ></td>
+                  <td
+                    id="religion"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  ></td>
+
+                  <td
+                    id="nationality"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  ></td>
+                  <td
+                    id="weight"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  ></td>
+                  <td
+                    id="height"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  ></td>
+                  <td
+                    id="schedule"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  ></td>
+                  <td
+                    id="diagnonis"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  ></td>
+
+                  <td
+                    id="doctor"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  ></td>
                   <td
                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap flex items-center gap-2"
                   >
