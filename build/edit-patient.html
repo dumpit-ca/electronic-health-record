@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="/assets/images/icons/favicon.svg"
+      href="images/icons/favicon.svg"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="/dist/output.css" />
-    <link rel="stylesheet" href="/assets/styles/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style/normalize.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
@@ -47,11 +47,7 @@
           <div class="nav__logo mx-auto text-center mb-10">
             <h1 class="text-3xl uppercase text-center">
               <span class="flex items-center gap-3 font-bold">
-                <img
-                  class="h-8 w-8"
-                  src="/assets/images/icons/favicon.svg"
-                  alt=""
-                />
+                <img class="h-8 w-8" src="images/icons/favicon.svg" alt="" />
                 EHR
               </span>
             </h1>
@@ -59,7 +55,7 @@
           <ul class="space-y-2 font-medium">
             <li>
               <a
-                href="../../index.html"
+                href="index.html"
                 class="flex items-center gap-3 p-2 font-bold hover:cursor-pointer hover:bg-light-blue duration-300 hover:rounded-md"
               >
                 <i class="bx bx-home text-2xl"></i>
@@ -68,7 +64,7 @@
             </li>
             <li>
               <a
-                href="#"
+                href="patients.html"
                 class="flex items-center gap-3 p-2 font-bold hover:cursor-pointer hover:bg-light-blue duration-300 hover:rounded-md"
               >
                 <i class="bx bx-user text-2xl"></i>
@@ -94,9 +90,9 @@
               class="text-dark font-bold flex items-center gap-2 cursor-pointer"
             >
               <i class="bx bxs-chevron-left text-3xl"></i>
-              <span class="text-3xl"> View Patient Record </span>
+              <span class="text-3xl"> Edit Patient Record </span>
             </a>
-            <form id="viewPatient" class="my-10 space-y-8">
+            <form id="editPatient" class="my-10 space-y-8">
               <div class="grid md:grid-cols-3 gap-5">
                 <div class="flex flex-col gap-2">
                   <label
@@ -106,7 +102,7 @@
                     First Name <span class="ml-0.5 text-red-500">*</span></label
                   >
                   <input
-                    disabled
+                    required
                     name="firstName"
                     id="firstName"
                     placeholder="First Name"
@@ -123,7 +119,7 @@
                     <span class="ml-0.5 text-red-500">*</span></label
                   >
                   <input
-                    disabled
+                    required
                     name="middleName"
                     id="middleName"
                     placeholder="Middle Name"
@@ -139,7 +135,7 @@
                     Last Name <span class="ml-0.5 text-red-500">*</span></label
                   >
                   <input
-                    disabled
+                    required
                     name="lastName"
                     id="lastName"
                     placeholder="Last Name"
@@ -158,7 +154,7 @@
                     Birthday <span class="ml-0.5 text-red-500">*</span></label
                   >
                   <input
-                    disabled
+                    required
                     name="birthday"
                     id="birthday"
                     type="date"
@@ -173,7 +169,7 @@
                     Age <span class="ml-0.5 text-red-500">*</span></label
                   >
                   <input
-                    disabled
+                    required
                     name="age"
                     id="age"
                     type="number"
@@ -202,7 +198,7 @@
                   Address <span class="ml-0.5 text-red-500">*</span></label
                 >
                 <input
-                  disabled
+                  required
                   name="address"
                   id="address"
                   type="text"
@@ -220,7 +216,7 @@
                     <span class="ml-0.5 text-red-500">*</span></label
                   >
                   <select
-                    disabled
+                    required
                     name="civilStatus"
                     id="civilStatus"
                     class="rounded-md"
@@ -238,7 +234,7 @@
                     Religion <span class="ml-0.5 text-red-500">*</span></label
                   >
                   <input
-                    disabled
+                    required
                     name="religion"
                     id="religion"
                     type="text"
@@ -254,7 +250,7 @@
                     <span class="ml-0.5 text-red-500">*</span></label
                   >
                   <input
-                    disabled
+                    required
                     name="nationality"
                     id="nationality"
                     type="text"
@@ -273,7 +269,7 @@
                   >
                   <div class="flex">
                     <input
-                      disabled
+                      required
                       name="weight"
                       id="weight"
                       type="number"
@@ -296,7 +292,7 @@
                   >
                   <div class="flex">
                     <input
-                      disabled
+                      required
                       name="height"
                       id="height"
                       type="number"
@@ -320,7 +316,7 @@
                   Complaint <span class="ml-0.5 text-red-500">*</span></label
                 >
                 <textarea
-                  disabled
+                  required
                   name="complaint"
                   id="complaint"
                   class="rounded-md bg-gray-100 border-0 text-gray-900 border-gray-100 patient-complaint"
@@ -335,7 +331,7 @@
                 >
                   Doctor <span class="ml-0.5 text-red-500">*</span></label
                 >
-                <select disabled name="doctor" id="doctor" class="rounded-md">
+                <select required name="doctor" id="doctor" class="rounded-md">
                   <option value="Dr. Meredith Grey">Dr. Meredith Grey</option>
                   <option value="Dr. Amelia Sheperd">Dr. Amelia Sheperd</option>
                   <option value="Dr. Alex Karev">Dr. Alex Karev</option>
@@ -354,7 +350,7 @@
                   <span class="ml-0.5 text-red-500">*</span></label
                 >
                 <input
-                  disabled
+                  required
                   name="scheduleDate"
                   id="scheduleDate"
                   type="date"
@@ -363,9 +359,14 @@
               </div>
 
               <div class="flex flex-col gap-2">
-                <label for="" class="text-grey-700 font-bold">Diagnosis</label>
+                <label
+                  for="diagnosis"
+                  class="text-grey-700 font-bold flex items-center gap-2"
+                >
+                  Diagnosis <span class="ml-0.5 text-red-500">*</span></label
+                >
                 <input
-                  disabled
+                  required
                   name="diagnosis"
                   id="diagnosis"
                   type="text"
@@ -379,18 +380,19 @@
                   Add diagnonis after consultation, and laboratory results.
                 </p>
               </div>
+
+              <button
+                type="submit"
+                class="px-3 py-2 text-white bg-blue-900 rounded-md hover:bg-blue-800 duration-300"
+              >
+                Update Patient
+              </button>
             </form>
-            <a
-              href="./edit-patient.html"
-              class="px-3 py-2 text-white bg-blue-900 rounded-md hover:bg-blue-800 duration-300"
-            >
-              Edit Patient
-            </a>
           </div>
         </div>
       </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-    <script src="../../scripts/view-patient.js"></script>
+    <script src="js/update-patient.js"></script>
   </body>
 </html>
