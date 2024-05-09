@@ -363,8 +363,15 @@
               </div>
 
               <div class="flex flex-col gap-2">
-                <label for="" class="text-grey-700 font-bold">Diagnosis</label>
+                <label
+                  for="dianosis"
+                  class="text-grey-700 font-bold flex items-center gap-2"
+                >
+                  Diagnosis
+                  <span class="ml-0.5 text-red-500">*</span></label
+                >
                 <input
+                  required
                   name="diagnosis"
                   id="diagnosis"
                   type="text"
@@ -375,7 +382,7 @@
                   id="helper-text-explanation"
                   class="mt-2 text-sm text-gray-500 dark:text-gray-400"
                 >
-                  Add diagnonis after consultation, and laboratory results.
+                  Add diagnonis, update when necessary.
                 </p>
               </div>
 

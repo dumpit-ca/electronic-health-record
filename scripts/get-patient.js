@@ -32,5 +32,5 @@ document.querySelector("#weight").innerHTML = weight.concat("kg");
 document.querySelector("#height").innerHTML = height.concat("cm");
 document.querySelector("#complaint").innerHTML = complaint;
 document.querySelector("#schedule").innerHTML = schedule;
-// document.querySelector("#diagnosis").innerHTML = diagnosis;
+document.querySelector("#diagnosis").innerHTML = diagnosis;
 document.querySelector("#doctor").innerHTML = doctor;
