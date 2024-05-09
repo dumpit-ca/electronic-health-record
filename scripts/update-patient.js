@@ -1,5 +1,19 @@
+// get local storage
+let json = localStorage.getItem("formData");
+
+// parse json data to javascript object
+let formData = JSON.parse(json);
+
+const firstName = (document.querySelector("#firstName").value =
+  formData.firstName);
+const middleName = (document.querySelector("#middleName").value =
+  formData.middleName);
+const lastName = (document.querySelector("#lastName").value =
+  formData.lastName);
+const birthday = (document.querySelector("#birthday").value = formData.birth);
+
 const form = document
-  .querySelector("#addPatient")
+  .querySelector("#editPatient")
   .addEventListener("submit", (e) => {
     e.preventDefault();
     const firstName = document.querySelector("#firstName").value;

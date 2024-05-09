@@ -9,13 +9,13 @@ let sex = `${formData.sex}`;
 let birth = `${formData.birth}`;
 let age = `${formData.age}`;
 let address = `${formData.address}`;
-let civilStatus = `${formData.civil}`;
+let civilStatus = `${formData.civilStatus}`;
 let religion = `${formData.religion}`;
 let nationality = `${formData.nationality}`;
 let weight = `${formData.weight}`;
 let height = `${formData.height}`;
+let complaint = `${formData.complaint}`;
 let schedule = new Date(formData.scheduleDate).toLocaleDateString();
-
 let diagnosis = `${formData.diagnosis}`;
 let doctor = `${formData.doctor}`;
 
@@ -30,6 +30,7 @@ document.querySelector("#religion").innerHTML = religion;
 document.querySelector("#nationality").innerHTML = nationality;
 document.querySelector("#weight").innerHTML = weight.concat("kg");
 document.querySelector("#height").innerHTML = height.concat("cm");
+document.querySelector("#complaint").innerHTML = complaint;
 document.querySelector("#schedule").innerHTML = schedule;
 // document.querySelector("#diagnosis").innerHTML = diagnosis;
 document.querySelector("#doctor").innerHTML = doctor;

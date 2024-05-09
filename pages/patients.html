@@ -75,15 +75,6 @@
                 Patients
               </a>
             </li>
-            <li>
-              <a
-                href="patients.html"
-                class="flex items-center gap-3 p-2 font-bold hover:cursor-pointer hover:bg-light-blue duration-300 hover:rounded-md"
-              >
-                <i class="bx bx-plus-medical text-2xl"></i>
-                Doctors
-              </a>
-            </li>
           </ul>
         </div>
       </aside>
@@ -183,6 +174,7 @@
                   <th scope="col" class="px-6 py-3">Nationality</th>
                   <th scope="col" class="px-6 py-3">Weight</th>
                   <th scope="col" class="px-6 py-3">Height</th>
+                  <th scope="col" class="px-6 py-3">Complaint</th>
                   <th scope="col" class="px-6 py-3">
                     Consultation Date & Time
                   </th>
@@ -240,6 +232,10 @@
                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
                   ></td>
                   <td
+                    id="complaint"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  ></td>
+                  <td
                     id="schedule"
                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
                   ></td>
@@ -255,7 +251,10 @@
                   <td
                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap flex items-center gap-2"
                   >
-                    <a href="" class="rounded-md py-2 px-3 bg-gray-100">
+                    <a
+                      href="./view-patient.html"
+                      class="rounded-md py-2 px-3 bg-gray-100"
+                    >
                       <i class="bx bxs-show text-lg text-green-600"></i>
                     </a>
                     <a href="" class="rounded-md py-2 px-3 bg-gray-100">

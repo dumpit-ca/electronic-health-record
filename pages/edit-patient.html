@@ -31,7 +31,7 @@
         data-drawer-toggle="default-sidebar"
         aria-controls="default-sidebar"
         type="button"
-        class="p-2 mt-2 ms-3 text-2xl text-gray-500 rounded-lg hover:bg-gray-100"
+        class="p-2 mt-2 ms-3 text-2xl text-gray-9000 rounded-lg hover:bg-gray-100 border-0 text-gray-900"
       >
         <span><i class="bx bx-menu"></i></span>
       </button>
@@ -94,9 +94,9 @@
               class="text-dark font-bold flex items-center gap-2 cursor-pointer"
             >
               <i class="bx bxs-chevron-left text-3xl"></i>
-              <span class="text-3xl"> Add a new patient </span>
+              <span class="text-3xl"> Edit Patient Record </span>
             </a>
-            <form id="addPatient" class="my-10 space-y-8">
+            <form id="editPatient" class="my-10 space-y-8">
               <div class="grid md:grid-cols-3 gap-5">
                 <div class="flex flex-col gap-2">
                   <label
@@ -111,7 +111,7 @@
                     id="firstName"
                     placeholder="First Name"
                     type="text"
-                    class="bg-background rounded-md"
+                    class="bg-gray-100 border-0 text-gray-900 rounded-md"
                   />
                 </div>
                 <div class="flex flex-col gap-2">
@@ -128,7 +128,7 @@
                     id="middleName"
                     placeholder="Middle Name"
                     type="text"
-                    class="bg-background rounded-md"
+                    class="bg-gray-100 border-0 text-gray-900 rounded-md"
                   />
                 </div>
                 <div class="flex flex-col gap-2">
@@ -144,7 +144,7 @@
                     id="lastName"
                     placeholder="Last Name"
                     type="text"
-                    class="bg-background rounded-md"
+                    class="bg-gray-100 border-0 text-gray-900 rounded-md"
                   />
                 </div>
               </div>
@@ -162,7 +162,7 @@
                     name="birthday"
                     id="birthday"
                     type="date"
-                    class="bg-background rounded-md"
+                    class="bg-gray-100 border-0 text-gray-900 rounded-md"
                   />
                 </div>
                 <div class="flex flex-col gap-2">
@@ -177,7 +177,7 @@
                     name="age"
                     id="age"
                     type="number"
-                    class="bg-background rounded-md"
+                    class="bg-gray-100 border-0 text-gray-900 rounded-md"
                   />
                 </div>
                 <div class="flex flex-col gap-2">
@@ -206,7 +206,7 @@
                   name="address"
                   id="address"
                   type="text"
-                  class="bg-background rounded-md"
+                  class="bg-gray-100 border-0 text-gray-900 rounded-md"
                 />
               </div>
 
@@ -242,7 +242,7 @@
                     name="religion"
                     id="religion"
                     type="text"
-                    class="bg-background rounded-md"
+                    class="bg-gray-100 border-0 text-gray-900 rounded-md"
                   />
                 </div>
                 <div class="flex flex-col gap-2">
@@ -258,7 +258,7 @@
                     name="nationality"
                     id="nationality"
                     type="text"
-                    class="bg-background rounded-md"
+                    class="bg-gray-100 border-0 text-gray-900 rounded-md"
                   />
                 </div>
               </div>
@@ -323,7 +323,7 @@
                   required
                   name="complaint"
                   id="complaint"
-                  class="rounded-md bg-background border-gray-100 patient-complaint"
+                  class="rounded-md bg-gray-100 border-0 text-gray-900 border-gray-100 patient-complaint"
                   placeholder="Complaint"
                 ></textarea>
               </div>
@@ -363,40 +363,33 @@
               </div>
 
               <div class="flex flex-col gap-2">
-                <label for="" class="text-grey-700 font-bold">Diagnosis</label>
+                <label
+                  for="diagnosis"
+                  class="text-grey-700 font-bold flex items-center gap-2"
+                >
+                  Diagnosis <span class="ml-0.5 text-red-500">*</span></label
+                >
                 <input
+                  required
                   name="diagnosis"
                   id="diagnosis"
                   type="text"
-                  class="rounded-md bg-background"
+                  class="rounded-md bg-gray-100 border-0 text-gray-900"
                   placeholder="Diagnosis"
                 />
                 <p
                   id="helper-text-explanation"
-                  class="mt-2 text-sm text-gray-500 dark:text-gray-400"
+                  class="mt-2 text-sm text-gray-9000 dark:text-gray-400"
                 >
                   Add diagnonis after consultation, and laboratory results.
                 </p>
-              </div>
-
-              <div class="flex flex-col gap-2">
-                <label for="" class="text-grey-700 font-bold"
-                  >Profile Image</label
-                >
-                <input
-                  name="profileImg"
-                  id="profileImg"
-                  type="file"
-                  class="rounded-md bg-background"
-                  placeholder="Diagnosis"
-                />
               </div>
 
               <button
                 type="submit"
                 class="px-3 py-2 text-white bg-blue-900 rounded-md hover:bg-blue-800 duration-300"
               >
-                Add Patient
+                Update Patient
               </button>
             </form>
           </div>
@@ -404,6 +397,6 @@
       </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-    <script src="../../scripts/add-patient.js"></script>
+    <script src="../../scripts/update-patient.js"></script>
   </body>
 </html>

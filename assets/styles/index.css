@@ -8,3 +8,8 @@ body {
   overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
 }
+input:disabled,
+textarea:disabled,
+select:disabled {
+  background-color: rgb(203 213 225) !important;
+}
