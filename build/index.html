@@ -76,7 +76,7 @@
       </aside>
 
       <div class="p-4 sm:ml-64">
-        <div class="top-nav py-5 w-96 ml-auto">
+        <div class="top-nav py-5 w-96 ml-auto md:block hidden">
           <span
             class="flex items-center gap-2 font-semibold hover:cursor-pointer justify-end"
           >
@@ -165,8 +165,10 @@
           >
             <canvas id="myChart" height="100"></canvas>
           </div>
-          <div class="grid grid-cols-10 gap-4 mb-4">
-            <div class="overflow-x-auto h-auto rounded-md col-span-6">
+          <div class="grid md:grid-cols-10 grid-cols-12 gap-4 mb-4">
+            <div
+              class="overflow-x-auto h-auto rounded-md md:col-span-6 col-span-12"
+            >
               <table class="w-full text-left rtl:text-right">
                 <thead class="text-sm bg-white border-b text-dark">
                   <tr>
@@ -689,12 +691,14 @@
             </div>
 
             <div
-              class="bg-white rounded-md p-8 overflow-y-auto space-y-5 h-[48.5rem] col-span-4"
+              class="bg-white rounded-md p-8 overflow-y-auto space-y-5 h-[48.5rem] md:col-span-4 col-span-12"
             >
               <h3 class="font-bold text-dark mb-10 text-xl">
                 Upcoming consultations
               </h3>
-              <div class="patient flex justify-between items-center">
+              <div
+                class="patient md:flex justify-between items-center md:space-y-0 space-y-3"
+              >
                 <div class="flex items-center gap-3">
                   <img
                     src="images/patients/patient-1.png"
@@ -714,7 +718,9 @@
                   >Clinical record</a
                 >
               </div>
-              <div class="patient flex justify-between items-center">
+              <div
+                class="patient md:flex justify-between items-center md:space-y-0 space-y-3"
+              >
                 <div class="flex items-center gap-3">
                   <img
                     src="images/patients/patient-1.png"
@@ -734,7 +740,9 @@
                   >Clinical record</a
                 >
               </div>
-              <div class="patient flex justify-between items-center">
+              <div
+                class="patient md:flex justify-between items-center md:space-y-0 space-y-3"
+              >
                 <div class="flex items-center gap-3">
                   <img
                     src="images/patients/patient-1.png"
@@ -754,7 +762,9 @@
                   >Clinical record</a
                 >
               </div>
-              <div class="patient flex justify-between items-center">
+              <div
+                class="patient md:flex justify-between items-center md:space-y-0 space-y-3"
+              >
                 <div class="flex items-center gap-3">
                   <img
                     src="images/patients/patient-1.png"
@@ -774,7 +784,9 @@
                   >Clinical record</a
                 >
               </div>
-              <div class="patient flex justify-between items-center">
+              <div
+                class="patient md:flex justify-between items-center md:space-y-0 space-y-3"
+              >
                 <div class="flex items-center gap-3">
                   <img
                     src="images/patients/patient-1.png"
@@ -794,7 +806,9 @@
                   >Clinical record</a
                 >
               </div>
-              <div class="patient flex justify-between items-center">
+              <div
+                class="patient md:flex justify-between items-center md:space-y-0 space-y-3"
+              >
                 <div class="flex items-center gap-3">
                   <img
                     src="images/patients/patient-1.png"
@@ -814,7 +828,9 @@
                   >Clinical record</a
                 >
               </div>
-              <div class="patient flex justify-between items-center">
+              <div
+                class="patient md:flex justify-between items-center md:space-y-0 space-y-3"
+              >
                 <div class="flex items-center gap-3">
                   <img
                     src="images/patients/patient-1.png"
@@ -834,7 +850,9 @@
                   >Clinical record</a
                 >
               </div>
-              <div class="patient flex justify-between items-center">
+              <div
+                class="patient md:flex justify-between items-center md:space-y-0 space-y-3"
+              >
                 <div class="flex items-center gap-3">
                   <img
                     src="images/patients/patient-1.png"
@@ -856,9 +874,9 @@
               </div>
             </div>
           </div>
-          <div class="grid grid-cols-9 gap-4">
+          <div class="grid md:grid-cols-9 gap-4">
             <div
-              class="patient-details rounded-md bg-white p-5 col-span-3 h-[30rem]"
+              class="patient-details rounded-md bg-white p-5 md:col-span-3 col-span-12 h-[30rem]"
             >
               <span class="flex justify-between">
                 <h2 class="text-dark font-bold text-xl mb-10">
@@ -923,7 +941,9 @@
                 </p>
               </div>
             </div>
-            <div class="rounded-lg col-span-6 overflow-auto h-[29rem]">
+            <div
+              class="rounded-lg md:col-span-6 col-span-12 overflow-auto h-[29rem]"
+            >
               <table class="w-full text-left rtl:text-right table-auto">
                 <thead class="text-sm bg-white border-b text-dark">
                   <tr>

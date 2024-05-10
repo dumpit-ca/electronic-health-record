@@ -49,5 +49,5 @@ const form = document
     localStorage.setItem("formData", json);
 
     //Redirect to display page
-    window.location.href = "/build/patients.html";
+    window.location.href = "patients.html";
   });
